@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/activity_main_top" />
+
+    <include
+        layout="@layout/activity_main_bottombox" 
+        android:id="@+id/include_bottombox"
+         />
+
+    <LinearLayout
+        
+        android:id="@+id/ll_activity_main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:layout_below="@id/include_top"
+        android:layout_above="@id/include_bottombox">
+
+    </LinearLayout>
+
+</RelativeLayout>
